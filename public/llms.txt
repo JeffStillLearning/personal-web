@@ -1,0 +1,32 @@
+# Jefta.dev — Freelance Web Developer
+
+> Jasa pembuatan website profesional untuk UMKM dan bisnis lokal Indonesia.
+
+## Tentang
+
+Jefta Nala Putra adalah freelance web developer berbasis di Yogyakarta, Indonesia, dengan pengalaman 3+ tahun membantu UMKM dan bisnis lokal memiliki kehadiran online yang serius. Lulusan Teknik Informatika, eks tim engineering startup B2B di Jakarta.
+
+## Layanan
+
+- **Landing Page** (Mulai Rp1.500.000): Halaman fokus konversi untuk promo produk, event, atau jasa spesifik. Mobile-first, WhatsApp CTA, SEO dasar, load < 2 detik.
+- **Company Profile** (Mulai Rp3.000.000): Website resmi 3–6 halaman dengan galeri, Google Maps, schema lokal. Membangun kepercayaan calon klien.
+- **Fitur Advanced** (Custom quote): Booking online, integrasi payment, dashboard admin, CRM sederhana, otomasi WhatsApp.
+
+## Keunggulan
+
+- Komunikasi via WhatsApp, update progres harian
+- Harga transparan, tidak ada biaya tersembunyi
+- Garansi 30 hari bug fix pasca-launch
+- Bilingual (Bahasa Indonesia & English)
+- Mobile-first, SEO-ready, Lighthouse score > 90
+
+## Teknologi
+
+Next.js, React, TypeScript, Tailwind CSS, Node.js, Framer Motion, Vercel, PostgreSQL, Stripe, Midtrans
+
+## Kontak
+
+- WhatsApp: +6281234567890
+- Email: halo@jefta.dev
+- Lokasi: Yogyakarta, Indonesia
+- Website: https://jefta.dev

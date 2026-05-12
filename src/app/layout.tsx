@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import JsonLd from '@/components/JsonLd';
+import { localBusinessSchema, servicesSchema, faqSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Jefta.dev — Website Profesional untuk Bisnis Lokal',
@@ -26,6 +28,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
+      <head>
+        <JsonLd data={localBusinessSchema} />
+        <JsonLd data={servicesSchema} />
+        <JsonLd data={faqSchema} />
+      </head>
       <body>{children}</body>
     </html>
   );

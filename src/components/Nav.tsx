@@ -1,7 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Icon from './Icon';
 import { WA_URL } from '@/data/data';
+import logo from '@/images/PP.png';
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,16 +26,15 @@ export default function Nav() {
 
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container nav-inner">
+      <div className="nav-inner">
         <a href="#top" className="brand">
-          <span className="brand-mark">J</span>
-          <span>Jefta<span style={{ color: 'var(--primary)' }}>.</span>dev</span>
+          <Image src={logo} alt="Jefta.dev" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' }} />
+          <span>Jeff<span style={{ color: 'var(--primary)' }}></span>  Digital Creative</span>
         </a>
         <div className="nav-links">
           {links.map(l => <a key={l.href} href={l.href}>{l.label}</a>)}
         </div>
         <div className="nav-cta">
-          <a href="#kontak" className="btn btn-ghost">Diskusi Project</a>
           <button className="btn btn-primary" onClick={handleWa}>
             <Icon name="whatsapp" size={16} /> Chat WA
           </button>

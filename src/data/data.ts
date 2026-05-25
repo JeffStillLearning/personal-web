@@ -35,85 +35,63 @@ export interface Service {
 }
 
 export const PORTFOLIO: PortfolioItem[] = [
-  {
-    id: 'warung-bu-sri',
-    title: 'Warung Bu Sri',
-    category: 'Landing Page',
-    desc: 'Landing page menu digital + lokasi untuk warung makan keluarga di Jogja.',
-    tags: ['Landing Page', 'Menu Digital', 'WhatsApp Order'],
-    bg: 'linear-gradient(135deg, #FFE0CC 0%, #FFB088 100%)',
-    glyph: 'BS',
-  },
-  {
-    id: 'klinik-permata',
-    title: 'Klinik Permata',
-    category: 'Company Profile',
-    desc: 'Company profile + jadwal dokter untuk klinik gigi di Bandung.',
-    tags: ['Company Profile', 'Jadwal Dokter', 'SEO Lokal'],
-    bg: 'linear-gradient(135deg, #C7EEF6 0%, #6BC8DA 100%)',
-    glyph: 'KP',
-  },
-  {
-    id: 'tani-makmur',
-    title: 'Tani Makmur',
-    category: 'Advanced',
-    desc: 'Sistem booking lahan + dashboard admin untuk koperasi tani.',
-    tags: ['Booking', 'Dashboard', 'Custom'],
-    bg: 'linear-gradient(135deg, #E9DCFF 0%, #B196FF 100%)',
-    glyph: 'TM',
-  },
-  {
-    id: 'kopi-tuju',
-    title: 'Kopi Tuju',
-    category: 'Landing Page',
-    desc: 'Landing page promo grand opening kedai kopi di Bekasi.',
-    tags: ['Landing Page', 'Event'],
-    bg: 'linear-gradient(135deg, #FFE9C7 0%, #FFC97A 100%)',
-    glyph: 'KT',
-  },
-  {
-    id: 'batik-sekar',
-    title: 'Batik Sekar',
-    category: 'Company Profile',
-    desc: 'Katalog batik tulis + cerita brand untuk pengrajin Solo.',
-    tags: ['Company Profile', 'Katalog'],
-    bg: 'linear-gradient(135deg, #FFD3D8 0%, #FF7A88 100%)',
-    glyph: 'BS',
-  },
-  {
-    id: 'kos-melati',
-    title: 'Kos Melati',
-    category: 'Advanced',
-    desc: 'Sistem pencarian kamar + chat WA otomatis untuk pemilik kos.',
-    tags: ['Booking', 'Auto-WA'],
-    bg: 'linear-gradient(135deg, #D4F3DD 0%, #6BCB8C 100%)',
-    glyph: 'KM',
-  },
+  // {
+  //   id: 'warung-bu-sri',
+  //   title: 'Warung Bu Sri',
+  //   category: 'Landing Page',
+  //   desc: 'Landing page menu digital + lokasi untuk warung makan keluarga di Jogja.',
+  //   tags: ['Landing Page', 'Menu Digital', 'WhatsApp Order'],
+  //   bg: 'linear-gradient(135deg, #FFE0CC 0%, #FFB088 100%)',
+  //   glyph: 'BS',
+  // },
+  // {
+  //   id: 'klinik-permata',
+  //   title: 'Klinik Permata',
+  //   category: 'Company Profile',
+  //   desc: 'Company profile + jadwal dokter untuk klinik gigi di Bandung.',
+  //   tags: ['Company Profile', 'Jadwal Dokter', 'SEO Lokal'],
+  //   bg: 'linear-gradient(135deg, #C7EEF6 0%, #6BC8DA 100%)',
+  //   glyph: 'KP',
+  // },
+  // {
+  //   id: 'tani-makmur',
+  //   title: 'Tani Makmur',
+  //   category: 'Advanced',
+  //   desc: 'Sistem booking lahan + dashboard admin untuk koperasi tani.',
+  //   tags: ['Booking', 'Dashboard', 'Custom'],
+  //   bg: 'linear-gradient(135deg, #E9DCFF 0%, #B196FF 100%)',
+  //   glyph: 'TM',
+  // },
+  // {
+  //   id: 'kopi-tuju',
+  //   title: 'Kopi Tuju',
+  //   category: 'Landing Page',
+  //   desc: 'Landing page promo grand opening kedai kopi di Bekasi.',
+  //   tags: ['Landing Page', 'Event'],
+  //   bg: 'linear-gradient(135deg, #FFE9C7 0%, #FFC97A 100%)',
+  //   glyph: 'KT',
+  // },
+  // {
+  //   id: 'batik-sekar',
+  //   title: 'Batik Sekar',
+  //   category: 'Company Profile',
+  //   desc: 'Katalog batik tulis + cerita brand untuk pengrajin Solo.',
+  //   tags: ['Company Profile', 'Katalog'],
+  //   bg: 'linear-gradient(135deg, #FFD3D8 0%, #FF7A88 100%)',
+  //   glyph: 'BS',
+  // },
+  // {
+  //   id: 'kos-melati',
+  //   title: 'Kos Melati',
+  //   category: 'Advanced',
+  //   desc: 'Sistem pencarian kamar + chat WA otomatis untuk pemilik kos.',
+  //   tags: ['Booking', 'Auto-WA'],
+  //   bg: 'linear-gradient(135deg, #D4F3DD 0%, #6BCB8C 100%)',
+  //   glyph: 'KM',
+  // },
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    name: 'Ibu Ratna',
-    role: 'Pemilik, Warung Bu Sri',
-    body: 'Dulu pelanggan suka nanya menu lewat WA satu-satu. Sekarang tinggal share link, hemat waktu banget. Webnya juga cepat dibuka di HP saya yang lama.',
-    avatar: 'R',
-    color: '#FF6B35',
-  },
-  {
-    name: 'Drg. Permata',
-    role: 'Owner, Klinik Permata',
-    body: "Pas search 'klinik gigi dekat sini' di Google, klinik saya muncul di halaman 1 setelah 2 bulan website live. Pasien baru naik dua kali lipat.",
-    avatar: 'P',
-    color: '#00B4D8',
-  },
-  {
-    name: 'Pak Hendro',
-    role: 'Ketua, Koperasi Tani Makmur',
-    body: 'Awalnya saya ragu mau pakai sistem online. Tapi prosesnya dibimbing pelan-pelan sampai anggota koperasi paham. Recommended buat UMKM.',
-    avatar: 'H',
-    color: '#7A5AE0',
-  },
-];
+export const TESTIMONIALS: Testimonial[] = [];
 
 export const FAQ: FaqItem[] = [
   {
@@ -146,39 +124,39 @@ export const SERVICES: Service[] = [
   {
     id: 'landing',
     name: 'Landing Page',
-    price: 'Mulai 1,5jt',
+    price: 'Mulai Rp 1.500.000',
     tagline: 'Halaman fokus konversi',
     desc: 'Satu halaman fokus jualan. Cocok untuk promo produk, event, atau jasa spesifik. Pengunjung langsung tahu apa yang Anda tawarkan dan cara menghubungi.',
-    bullets: ['Desain mobile-first', 'WhatsApp CTA terintegrasi', 'Optimasi SEO dasar', 'Load < 2 detik'],
+    bullets: ['1 Halaman scroll panjang (Hero, Tentang, Layanan, CTA)', 'Desain responsif mobile & desktop', 'WhatsApp button', 'Free domain .com (1 tahun)', 'Hosting 6 bulan', 'Free SSL', 'SEO On-Page Basic', '1x Revisi', 'Garansi maintenance 15 hari'],
     accent: '#FF6B35',
     bg: '#FFF1EA',
   },
   {
     id: 'profile',
     name: 'Company Profile',
-    price: 'Mulai 3jt',
+    price: 'Mulai 2.750.000',
     tagline: 'Wajah profesional bisnis',
     desc: 'Website resmi multi-halaman: tentang, layanan, galeri, kontak. Membangun kepercayaan calon klien dan muncul di pencarian Google.',
-    bullets: ['3–6 halaman lengkap', 'Galeri foto produk/jasa', 'Google Maps & schema lokal', 'Panduan update sendiri'],
+    bullets: ['Semua yang ada di Landing Page, plus:', 'Hosting 1 Tahun', 'Hingga 5 halaman (Home, About, Services, Portfolio, Contact)', 'Desain visual lebih kompleks (CTA, Form, Galeri)', 'WhatsApp Chat langsung', '2 Email Bisnis', '10 GB Disk Storage', '3x Revisi Gratis', 'SEO On-Page', 'Garansi Maintenance 1 Bulan'],
     accent: '#00B4D8',
     bg: '#E7F7FB',
   },
   {
     id: 'advanced',
     name: 'Fitur Advanced',
-    price: 'Custom quote',
+    price: 'Mulai 5.000.000',
     tagline: 'Solusi sesuai kebutuhan',
     desc: 'Sistem booking, integrasi payment, dashboard admin, CRM sederhana, otomasi WA. Diskusikan kebutuhan Anda — saya buatkan yang pas.',
-    bullets: ['Konsultasi kebutuhan gratis', 'Booking & sistem antrian', 'Dashboard admin custom', 'Integrasi payment gateway'],
+    bullets: ['Semua yang ada di Company Profile, plus:', 'Fitur Custom (Booking, Payment, Dashboard, dll)', 'Hingga 8+ halaman', 'Animasi interaktif', 'Integrasi API / Payment Gateway', 'Speed Optimization', '5x Revisi Gratis', 'Garansi Maintenance 1,5 Bulan', 'AI Search Optimization'],
     accent: '#7A5AE0',
     bg: '#F1ECFE',
   },
 ];
 
-export const SKILLS = [
-  'Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js',
-  'Framer Motion', 'SEO Technical', 'Vercel', 'PostgreSQL', 'Stripe', 'Midtrans',
-];
+// export const SKILLS = [
+//   'Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js',
+//   'Framer Motion', 'SEO Technical', 'Vercel', 'PostgreSQL', 'Stripe', 'Midtrans',
+// ];
 
 export const WA_NUMBER = '6281234567890'; // TODO: replace with real number
 export const WA_MESSAGE = encodeURIComponent('Halo Jefta, saya tertarik untuk diskusi project website. Boleh konsultasi?');

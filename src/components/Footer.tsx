@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import Icon from './Icon';
+import logo from '@/images/PP.png';
 
 export default function Footer() {
   return (
@@ -7,8 +9,8 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <a className="brand" href="#top">
-              <span className="brand-mark">J</span>
-              <span>Jefta<span style={{ color: 'var(--primary)' }}>.</span>dev</span>
+              <Image src={logo} alt="Jefta.dev" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' }} />
+              <span>Jeff<span style={{ color: 'var(--primary)' }}></span></span>
             </a>
             <p className="footer-tagline">Website profesional untuk UMKM Indonesia. Berbasis di Yogyakarta, melayani seluruh nusantara.</p>
           </div>
@@ -33,20 +35,20 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Kontak</h4>
             <ul>
-              <li><a href="https://wa.me/6281234567890">WA: 0812-3456-7890</a></li>
-              <li><a href="mailto:halo@jefta.dev">halo@jefta.dev</a></li>
-              <li><span>Yogyakarta, ID</span></li>
+              <li><a href="https://wa.me/6283110123195">0831-1012-3195</a></li>
+              <li><a href="mailto:jefta.nala20@gmail.com">jefta.nala20@gmail.com</a></li>
+              <li><span>Banyuwangi</span></li>
             </ul>
             <div className="socials" style={{ marginTop: 16 }}>
-              <a href="#" aria-label="Instagram"><Icon name="instagram" size={18} /></a>
+              <a href="https://www.instagram.com/jeffdigitalcreative/" aria-label="Instagram"><Icon name="instagram" size={18} /></a>
               <a href="#" aria-label="LinkedIn"><Icon name="linkedin" size={18} /></a>
               <a href="#" aria-label="GitHub"><Icon name="github" size={18} /></a>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 Jefta Nala Putra. Dibangun dengan Next.js + Tailwind.</span>
-          <span>Hosting: Vercel · Made in Yogyakarta</span>
+          <span>© 2026 Jefta Nala Putra.</span>
+          <span>Banyuwangi, Jawa Timur, Indonesia</span>
         </div>
       </div>
     </footer>

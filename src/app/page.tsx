@@ -1,6 +1,6 @@
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
-import TrustStrip from '@/components/TrustStrip';
+// import TrustStrip from '@/components/TrustStrip';
 import About from '@/components/About';
 import Services from '@/components/Services';
 import Portfolio from '@/components/Portfolio';
@@ -15,7 +15,7 @@ export default function HomePage() {
     <>
       <Nav />
       <Hero />
-      <TrustStrip />
+      {/* <TrustStrip /> */}
       <About />
       <Services />
       <Portfolio />

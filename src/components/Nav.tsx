@@ -16,9 +16,9 @@ export default function Nav() {
   }, []);
 
   const links = [
+    { href: '#tentang', label: 'Tentang' },
     { href: '#layanan', label: 'Layanan' },
     { href: '#portfolio', label: 'Portfolio' },
-    { href: '#tentang', label: 'Tentang' },
     { href: '#faq', label: 'FAQ' },
   ];
 

@@ -12,7 +12,7 @@ export default function CTAFinal() {
             <span className="dot" /> Siap mulai?
           </span> */}
           <h2 style={{ marginTop: 16 }}>Yuk wujudkan website yang bikin bisnis Anda dilirik calon pembeli.</h2>
-          <p>Konsultasi awal gratis. Saya bantu hitung kebutuhan, kasih estimasi waktu dan biaya, tanpa tekanan.</p>
+          <p>Konsultasi awal gratis. Saya bantu hitung kebutuhan, kasih estimasi waktu dan biaya, tanpa susah-susah.</p>
           <button className="btn" onClick={handleWa}>
             <Icon name="whatsapp" size={18} /> Mulai dari WhatsApp
           </button>

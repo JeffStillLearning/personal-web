@@ -12,7 +12,7 @@ export default function Footer() {
               <Image src={logo} alt="Jefta.dev" width={36} height={36} style={{ borderRadius: '50%', objectFit: 'cover' }} />
               <span>Jeff<span style={{ color: 'var(--primary)' }}></span></span>
             </a>
-            <p className="footer-tagline">Website profesional untuk UMKM Indonesia. Berbasis di Yogyakarta, melayani seluruh nusantara.</p>
+            <p className="footer-tagline">Website profesional untuk UMKM Indonesia. Berbasis di Jember, melayani seluruh nusantara.</p>
           </div>
           <div className="footer-col">
             <h4>Layanan</h4>
@@ -37,18 +37,18 @@ export default function Footer() {
             <ul>
               <li><a href="https://wa.me/6283110123195">0831-1012-3195</a></li>
               <li><a href="mailto:jefta.nala20@gmail.com">jefta.nala20@gmail.com</a></li>
-              <li><span>Banyuwangi</span></li>
+              <li><span>Jember</span></li>
             </ul>
             <div className="socials" style={{ marginTop: 16 }}>
               <a href="https://www.instagram.com/jeffdigitalcreative/" aria-label="Instagram"><Icon name="instagram" size={18} /></a>
-              <a href="#" aria-label="LinkedIn"><Icon name="linkedin" size={18} /></a>
-              <a href="#" aria-label="GitHub"><Icon name="github" size={18} /></a>
+              <a href="https://www.facebook.com/profile.php?id=61560614954076" aria-label="Facebook"><Icon name="facebook" size={18} /></a>
+              <a href="https://github.com/JeffStillLearning/" aria-label="GitHub"><Icon name="github" size={18} /></a>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
           <span>© 2026 Jefta Nala Putra.</span>
-          <span>Banyuwangi, Jawa Timur, Indonesia</span>
+          <span>Jember, Jawa Timur, Indonesia</span>
         </div>
       </div>
     </footer>

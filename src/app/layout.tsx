@@ -4,25 +4,25 @@ import JsonLd from '@/components/JsonLd';
 import { localBusinessSchema, servicesSchema, faqSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Jefta.dev — Website Profesional untuk Bisnis Lokal',
+  title: 'Jeff Digital Creative | Jasa Website Profesional untuk UMKM',
   description: 'Jasa pembuatan website Landing Page, Company Profile, dan Fitur Custom untuk UMKM Indonesia. Cepat, rapi, sesuai budget.',
-  keywords: ['jasa pembuatan website', 'web developer freelance', 'website UMKM', 'landing page murah', 'company profile', 'Yogyakarta'],
+  keywords: ['jasa pembuatan website', 'web developer freelance', 'website UMKM', 'landing page murah', 'company profile', 'Jeff Digital Creative', 'Banyuwangi', 'Jawa Timur'],
   authors: [{ name: 'Jefta Nala Putra' }],
   openGraph: {
-    title: 'Jefta.dev — Website Profesional untuk Bisnis Lokal',
+    title: 'Jeff Digital Creative | Jasa Website Profesional untuk UMKM',
     description: 'Jasa pembuatan website Landing Page, Company Profile, dan Fitur Custom untuk UMKM Indonesia.',
-    url: 'https://jefta.dev',
-    siteName: 'Jefta.dev',
+    url: 'https://jeffdigitalcreative.my.id',
+    siteName: 'Jeff Digital Creative',
     locale: 'id_ID',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jefta.dev — Website Profesional untuk Bisnis Lokal',
+    title: 'Jeff Digital Creative | Jasa Website Profesional untuk UMKM',
     description: 'Jasa pembuatan website Landing Page, Company Profile, dan Fitur Custom untuk UMKM Indonesia.',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://jefta.dev' },
+  alternates: { canonical: 'https://jeffdigitalcreative.my.id' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

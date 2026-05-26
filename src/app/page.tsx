@@ -23,7 +23,7 @@ export default function HomePage() {
       <FAQSection />
       <CTAFinal />
       <Footer />
-      <WaFloat />
+      {/* <WaFloat /> */}
     </>
   );
 }

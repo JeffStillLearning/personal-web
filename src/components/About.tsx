@@ -28,7 +28,7 @@ export default function About() {
               Saya percaya bahwa setiap pelaku usaha kecil berhak tumbuh. Misi saya adalah menjembatani kesenjangan digital agar UMKM Indonesia bisa bersaing, berkembang, dan berkelanjutan di era modern.
             </p>
             <div className="about-quote">
-              <p>Website bukan sekadar tampilan — ini adalah alat kerja yang harus menghasilkan. Setiap baris kode yang saya tulis punya satu tujuan: bisnis Anda tumbuh.</p>
+              <p>Memiliki website sama halnya memiliki rumah digital sendiri, bisnis tetap berjalan 24 jam tanpa harus bergantung pada algoritma atau aturan marketplace yang membuat UMKM terbebani dengan potongan besar.</p>
             </div>
             {/* <div className="skills">
               {SKILLS.map(s => <span key={s} className="skill">{s}</span>)}

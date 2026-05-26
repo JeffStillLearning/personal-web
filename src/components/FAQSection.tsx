@@ -14,11 +14,11 @@ export default function FAQSection() {
           <div className="faq-sidebar">
             <ScrollReveal>
               <h2>Pertanyaan yang sering ditanyakan</h2>
-              <p style={{ marginTop: 16, color: 'var(--text-muted)' }}>Tidak yakin mulai dari mana? Mungkin jawabannya ada di sini.</p>
+              
             </ScrollReveal>
             <div className="faq-help">
-              <h3>Belum nemu jawaban?</h3>
-              <p>Chat langsung — biasanya dibalas dalam 1 jam (jam kerja WIB). Konsultasi awal gratis tanpa minimum project.</p>
+              <h3>Belum menemukan jawaban?</h3>
+              <p>Chat langsung dengan klik tombol dibawah, konsultasikan keluhan anda dan temukan solusi</p>
               <button className="btn btn-primary" onClick={handleWa}>
                 <Icon name="whatsapp" size={16} /> Tanya via WA
               </button>

@@ -12,7 +12,7 @@ export default function Services() {
           <div className="section-head">
             {/* <span className="eyebrow"><span className="dot" /> Layanan</span> */}
             <h2>Pilih paket sesuai kebutuhan bisnis Anda</h2>
-            <p>Tiga paket utama yang sudah terbukti membantu UMKM lokal. Atau diskusikan kebutuhan spesifik Anda — saya buatkan custom quote.</p>
+            <p>Tiga paket utama yang sudah terbukti membantu UMKM lokal. Atau diskusikan kebutuhan spesifik Anda</p>
           </div>
         </ScrollReveal>
         <div className="services-grid">

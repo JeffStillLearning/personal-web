@@ -218,6 +218,6 @@ export const SERVICES: Service[] = [
 //   'Framer Motion', 'SEO Technical', 'Vercel', 'PostgreSQL', 'Stripe', 'Midtrans',
 // ];
 
-export const WA_NUMBER = '6281234567890'; // TODO: replace with real number
+export const WA_NUMBER = '6283110123195';
 export const WA_MESSAGE = encodeURIComponent('Halo Jefta, saya tertarik untuk diskusi project website. Boleh konsultasi?');
 export const WA_URL = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`;

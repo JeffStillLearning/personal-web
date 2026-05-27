@@ -156,7 +156,7 @@ export const TESTIMONIALS: Testimonial[] = [];
 export const FAQ: FaqItem[] = [
   {
     q: 'Berapa lama waktu pengerjaan?',
-    a: 'Untuk Landing Page sekitar 7-10 hari kerja. Company Profile 10–14 hari. Fitur custom tergantung kompleksitas — kita diskusikan dulu sebelum mulai.',
+    a: 'Untuk Landing Page sekitar 7-10 hari kerja. Company Profile 10–14 hari. Fitur custom tergantung kompleksitas, kita diskusikan dulu sebelum mulai.',
   },
   {
     q: 'Apakah bisa revisi setelah launch website?',

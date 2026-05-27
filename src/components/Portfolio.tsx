@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Icon from "./Icon";
 import ScrollReveal from "./ScrollReveal";
@@ -8,6 +8,9 @@ import { PORTFOLIO, PortfolioItem, PortfolioCategory } from "@/data/data";
 function Modal({ project, onClose }: { project: PortfolioItem; onClose: () => void }) {
   const [activeIdx, setActiveIdx] = useState(0);
   const imgs = project.images ?? [];
+  const modalRef = useRef<HTMLDivElement>(null);
+  const startY = useRef(0);
+  const currentY = useRef(0);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -23,11 +26,41 @@ function Modal({ project, onClose }: { project: PortfolioItem; onClose: () => vo
     };
   }, [onClose, imgs.length]);
 
+  const onTouchStart = (e: React.TouchEvent) => {
+    startY.current = e.touches[0].clientY;
+    currentY.current = 0;
+    if (modalRef.current) modalRef.current.style.transition = "none";
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    const delta = e.touches[0].clientY - startY.current;
+    if (delta < 0) return;
+    currentY.current = delta;
+    if (modalRef.current) modalRef.current.style.transform = `translateY(${delta}px)`;
+  };
+
+  const onTouchEnd = () => {
+    if (!modalRef.current) return;
+    if (currentY.current > 100) {
+      onClose();
+    } else {
+      modalRef.current.style.transition = "transform 0.3s ease";
+      modalRef.current.style.transform = "";
+    }
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className={`modal ${imgs.length > 0 ? "has-gallery" : ""}`} onClick={e => e.stopPropagation()}>
+      <div
+        ref={modalRef}
+        className={`modal ${imgs.length > 0 ? "has-gallery" : ""}`}
+        onClick={e => e.stopPropagation()}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
 
-        <div className="modal-drag-handle" onClick={onClose} />
+        <div className="modal-drag-handle" />
 
         {imgs.length > 0 ? (
           <>

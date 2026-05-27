@@ -27,6 +27,8 @@ function Modal({ project, onClose }: { project: PortfolioItem; onClose: () => vo
     <div className="modal-overlay" onClick={onClose}>
       <div className={`modal ${imgs.length > 0 ? "has-gallery" : ""}`} onClick={e => e.stopPropagation()}>
 
+        <div className="modal-drag-handle" onClick={onClose} />
+
         {imgs.length > 0 ? (
           <>
             <div className="modal-gallery" style={{ aspectRatio: project.imageAspect ?? '4/3' }}>
@@ -106,10 +108,9 @@ export default function Portfolio() {
               <button className="proj" key={p.id} onClick={() => setSelected(p)}>
                 <div className={`proj-thumb ${p.cover ? "has-img" : ""}`} style={p.cover ? undefined : { background: p.bg }}>
                   {p.cover
-                    ? <Image src={p.cover} alt={p.title} fill style={{ objectFit: "cover" }} />
+                    ? <Image src={p.cover} alt={p.title} fill style={{ objectFit: "cover", objectPosition: "left top" }} />
                     : p.glyph
                   }
-                  <span className="proj-cat">{p.category}</span>
                 </div>
                 <div className="proj-body">
                   <h3>{p.title}</h3>
